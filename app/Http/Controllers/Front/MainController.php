@@ -145,7 +145,7 @@ class mainController extends Controller
                               </li>
                           </ul>
                       </div>
-                      <a href="{{url(\'/donation-details/'.$donation->id.'\')}}" class="btn btn-light">التفاصيل</a>
+                    <a href="http://localhost/blood_bank/public/donation-details/'.$donation->id.'" class="btn btn-light">التفاصيل</a>
                   </div>  ';
         }
         return $data;

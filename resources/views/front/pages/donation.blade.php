@@ -22,12 +22,14 @@
             <div class="filter">
 {{--                <form action="{{url('/donation-filter')}}" method="get" class="w-50 m-auto">--}}
                     <select class="custom-select wow fadeInRight" name="blood_type" id="blood_type">
+                        <option value="">أختر فصيله الدم</option>
                         @foreach(\App\Models\BloodType::all() as  $blood_type)
                             <option value="{{$blood_type->id}}">{{$blood_type->name}}</option>
                         @endforeach
                     </select>
 
                     <select class="custom-select wow fadeInLeft" name="city" id="city">
+                        <option value="">أختر المدينه</option>
                         @foreach(\App\Models\City::all() as $city)
                             <option value="{{$city->id}}">{{$city->name}}</option>
                         @endforeach
@@ -89,12 +91,16 @@
                     if(date){   //state
                         $('#contain').html(date);
                     }else {
-                        $('#contain').html('<div class="no-result">no resulte</div>');
+                        $('#contain').html('<div id="no-result">no resulte</div>');
+                        document.getElementById('no-result').style.backgroundColor='#fafafa';
+                        document.getElementById('no-result').style.padding='20px';
+                        document.getElementById('no-result').style.textAlign='center';
+                        document.getElementById('no-result').style.fontSize='30px';
+                        document.getElementById('no-result').style.fontWeight=900;
                     }
                 },
 
             });
         });
     </script>
-
 @endpush

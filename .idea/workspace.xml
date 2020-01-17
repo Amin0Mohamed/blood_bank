@@ -2,24 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf992bca-44e4-4226-b817-1d71f93f53fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_14_130318_create_client_post_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/sweet/alert.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/sweet/alert.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/GetCityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/GetCityController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/blood_bank.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blood_bank.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_06_072631_create_donation_requests_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_06_072631_create_donation_requests_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/layout/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layout/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/pages/donation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/pages/donation.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/pages/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/pages/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/pages/sign-new-donation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/pages/sign-new-donation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/pages/signup.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/dashboard/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/dashboard/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,6 +147,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.env" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/dashboard/contacts" />
@@ -181,23 +174,23 @@
       <recent name="D:\xampp\htdocs\blood_bank\public\dashboard\en\plugins\datatables-bs4\css" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -267,6 +260,7 @@
       <workItem from="1579002026661" duration="6721000" />
       <workItem from="1579076226828" duration="10706000" />
       <workItem from="1579248963149" duration="44000" />
+      <workItem from="1579250705116" duration="4242000" />
     </task>
     <servers />
   </component>

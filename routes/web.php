@@ -16,7 +16,7 @@ Route::namespace('Front')->group(function(){
     Route::post('/signup','MainController@signup');
     Route::post('/store-donation','MainController@storeDonation');
     Route::get('/donation-filter','MainController@donetion_filtter');
-    Route::get('/toggle','MainController@toggle');
+    Route::post('/toggle','MainController@toggle');
 
     Route::get('city/{id}','mainController@getCity');
 

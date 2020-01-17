@@ -67,7 +67,7 @@
                         @foreach($articals as $artical)
                         <div class="card">
                             <img src="{{url('/')}}/productimages/{{$artical->image}}" class="card-img-top img-thumbnail" alt="img">
-                            <i id="{{$artical->id}}" onclick="toggleFavourite(this)" class="fa fa-heart-o fas
+                            <i id="{{$artical->id}}" onclick="toggleFavourite(this)" class="fa fa-heart-o
                               {{$artical->is_favourite ? 'second-heart':'first-heart'}}
                                "></i>
                             <div class="card-body">
@@ -93,22 +93,20 @@
         <div class="container">
             <h4 class="heder_line text-danger">طلبات التبرع</h4>
             <div class="filter">
-                {{--                <form action="{{url('/donation-filter')}}" method="get" class="w-50 m-auto">--}}
                 <select class="custom-select wow fadeInRight" name="blood_type" id="blood_type">
-                    @foreach(\App\Models\BloodType::all() as  $blood_type)
+                    <option value="">أختر فصيله الدم</option>
+                @foreach(\App\Models\BloodType::all() as  $blood_type)
                         <option value="{{$blood_type->id}}">{{$blood_type->name}}</option>
                     @endforeach
                 </select>
 
                 <select class="custom-select wow fadeInLeft" name="city" id="city">
+                    <option value="">أختر المدينه</option>
                     @foreach(\App\Models\City::all() as $city)
                         <option value="{{$city->id}}">{{$city->name}}</option>
                     @endforeach
                 </select>
-                {{--                    <button type="submit" style="background-color: transparent;border: none;">--}}
                 <i class="fa fa-search fa-1x search" id="search" style="cursor: pointer"></i>
-                {{--                    </button>--}}
-                {{--                </form>--}}
 
             </div>
             <div class="all_donation wow rollIn" id="contain">
@@ -201,7 +199,12 @@
                     if(date){   //state
                         $('#contain').html(date);
                     }else {
-                        $('#contain').html('<div class="no-result">no resulte</div>');
+                        $('#contain').html('<div id="no-result">no resulte</div>');
+                        document.getElementById('no-result').style.backgroundColor='#fafafa';
+                        document.getElementById('no-result').style.padding='20px';
+                        document.getElementById('no-result').style.textAlign='center';
+                        document.getElementById('no-result').style.fontSize='30px';
+                        document.getElementById('no-result').style.fontWeight=900;
                     }
                 },
 
@@ -213,9 +216,10 @@
     <script>
        function toggleFavourite(heart) {
            var post_id=heart.id;
+           console.log(post_id);
            $.ajax({
                url:"{{url('/toggle')}}",
-               type:"get",
+               type:"POST",
                data: { _token:'{{csrf_token()}}', post_id: post_id },
                success:function (date) {
                   console.log(date);

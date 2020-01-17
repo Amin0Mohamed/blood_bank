@@ -312,14 +312,17 @@ footer ul li a:hover {
 }
 #articals .all_articals .card i{
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 10px;
+    left: 10px;
     padding: 10px;
     border-radius: 50%;
     background-color: #2d3e50;
     color: #fff;
+    cursor: pointer;
 }
-#articals .all_articals .card:hover .fa {background-color: #7d0000;cursor: pointer}
+.first-heart{background-color: #d2ff57;}
+.second-heart{background-color: #7d0000;}
+/*#articals .all_articals .card :hover .fa {background-color: #7d0000;cursor: pointer}*/
 #articals .all_articals .arrows{
     direction: ltr;
     position: absolute;
@@ -370,8 +373,8 @@ footer ul li a:hover {
     align-items: center;
     padding: 3px;
     background-color: #fff;
-    border-top-right-radius: 45px;
-    border-bottom-right-radius: 45px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 #donation .all_donation .don .blood_type{
     text-align: center;
@@ -383,6 +386,14 @@ footer ul li a:hover {
 }
 #donation .all_donation .don .btn{
     width: 132px;
+}
+
+#donation .all_donation .don .no-result{
+    padding: 20px;
+    background-color: #fafafa;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
 }
 
 /* ************* donation******************/
