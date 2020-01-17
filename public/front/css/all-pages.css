@@ -1,0 +1,85 @@
+.signin img {
+    width: 28%;
+}
+.artical img{
+      width: 50%;
+
+  }
+.artical i{
+    padding: 20px;
+    border-radius: 50%;
+    border:1px solid #eeeeee;
+    text-align: center;
+    font-size: 19px;
+  }
+.artical i:hover{
+    background-color: #7d0000;
+}
+.artical .text p{
+    line-height: 2.5rem;
+}
+
+input[type="checkbox"]{
+    width: 50px;
+    height: 20px;
+}
+body{
+    background-color: #f5f5f5;
+}
+*{
+    direction: rtl;
+}
+.navbar .collapse form a{
+    text-decoration: none;margin-left: 30px;
+}
+.navbar .collapse form a:hover{
+    color: #f00;
+}
+.navbar .collapse form .create-acount-link{
+    color: #bbbbbb;
+    text-decoration: underline;margin-left: 30px;
+}
+.navbar .collapse form .create-acount-link:hover{
+    color: #f00;
+
+}
+
+#donation .pag .pagination .page-item{margin: 5px}
+.status-details .status-info .table tr td:first-of-type{
+    background-color: #f5f5f5;
+}
+.status-details .status-info .table tr td:last-of-type{
+    background-color: #fafafa;
+}
+
+
+.contact .head{
+    color: #fff;
+    background-color: #2d3e50;
+}
+.contact .con1 .t{margin: 42px auto 0px auto;}
+.contact .con1{
+    padding-bottom: 40px
+}
+.contact .con1 , .contact .con2 {box-shadow: 0 5px 10px #bbb;margin-bottom: 20px;}
+.contact .con1 .social-media{margin:10px auto ;}
+.contact .con1 .social-media .facebook {color: #4267B2;}
+.contact .con1 .social-media .twitter {color: #1489ED;}
+.contact .con1 .social-media .youtube {color: #c31e22;}
+.contact .con1 .social-media .insta {color: #DB4D98;}
+.contact .con1 .social-media .whatsapp {color: #2FB120;}
+.contact .con1 .social-media .google {color: #c31e22;}
+.contact .con1 .social-media a{text-decoration: none;}
+.contact .con1 .social-media i{font-size: 40px;}
+/************************/
+.about-us .about-US-content p{
+    line-height: 2.5rem;
+}
+
+.page-link:hover {
+    z-index: 2;
+    color: #7e0f1e;
+    text-decoration: none;
+    background-color: #84b3e5;
+    /* border-color: #dee2e6; */
+}
