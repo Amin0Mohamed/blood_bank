@@ -68,9 +68,9 @@
                       <a class="nav-link" href="{{url('/')}}">الرئيسيه <span class="sr-only">(current)</span></a>
                   </li>
                   <span class="vertical_line"></span>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">عن بنك الدم</a>
-                  </li>
+{{--                  <li class="nav-item">--}}
+{{--                      <a class="nav-link" href="#">عن بنك الدم</a>--}}
+{{--                  </li>--}}
                   <span class="vertical_line"></span>
                   <li class="nav-item">
                       <a class="nav-link" href="{{url('/articals')}}">المقالات</a>

@@ -26,10 +26,11 @@ Route::group(['namespace'=>'Api'],function (){
     Route::get('city','MainController@citiesSearch');
     Route::post('/register','AuthController@register');
     Route::post('/login','AuthController@login');
+    Route::delete('/delete-client/{id}','AuthController@deleteClient');
 
     Route::group(['middleware'=>'auth:client-api'],function (){
 
-        Route::get('/update-profile','AuthController@update_profile');
+        Route::put('/update-profile','AuthController@update_profile');
         Route::get('/posts','MainController@posts');
         Route::get('/post','MainController@post');
         Route::get('/categories','MainController@categories');

@@ -85,6 +85,12 @@ class AuthController extends Controller
         return ResponseJson(1,'تمت المطابقه بنجاح',$auth);
     }
 
+    public function deleteClient(Request $request ,$id)
+    {
+       $client = Client::find($id)->delete();
+      return ResponseJson(1,'تم ازاله العميل بنجاح',$client);
+    }
+
     public function registerToken(Request $request)
     {
         $valdator = validator()->make($request->all(),[

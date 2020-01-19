@@ -129,6 +129,32 @@
 
 @endsection
 
+@push('scripts')
+    <script>
+        $('#gov').change(function(){
+            document.getElementById("city").classList.remove('d-none');
+            var gid = $(this).val();
+            var url = "{{url('city')}}/"+gid;
+            if(gid){
 
+                $.ajax({
+                    type:"get",
+                    url:url,
+                    // dataType:json,
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    success:function(data)
+                    {
+                        if(data)
+                        {
+                            $("#cities").html(data);
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+@endpush
 
 
